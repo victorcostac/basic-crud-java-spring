@@ -1,5 +1,6 @@
 package com.example.crud.domain.product;
 
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -27,6 +28,7 @@ public class Product {
     private float price_in_cents;
 
     private Boolean active;
+
 
     public Product(RequestProduct requestProduct){
         this.name = requestProduct.name();
